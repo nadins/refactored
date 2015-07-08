@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.149 sec <<< FAILURE! - in TestSuite
+goToGmailTest(tests.OpenGmailTest)  Time elapsed: 0.112 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at pages.HomePage.goToDrive(HomePage.java:40)
+	at tests.OpenGmailTest.goToGmailTest(OpenGmailTest.java:35)
+
+tearDown(tests.OpenGmailTest)  Time elapsed: 0.115 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at tests.OpenGmailTest.tearDown(OpenGmailTest.java:42)
+

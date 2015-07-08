@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [Tests]" parallel="tests">
+  <test name="Test in Firefox(failed)" parallel="tests">
+    <classes>
+      <class name="tests.OpenGmailTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="goToGmailTest"/>
+        </methods>
+      </class> <!-- tests.OpenGmailTest -->
+    </classes>
+  </test> <!-- Test in Firefox(failed) -->
+</suite> <!-- Failed suite [Tests] -->
